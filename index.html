@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joshua Catzoela — Backend Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-bg text-gray-200 font-body min-h-screen">
+
+  <!-- Hero -->
+  <section class="grid-bg border-b border-line">
+    <div class="max-w-3xl mx-auto px-6 pt-28 pb-24">
+      <p class="font-mono text-xs text-accent tracking-widest uppercase mb-6">
+        &lt;joshua_catzoela /&gt;
+      </p>
+      <h1 class="font-display text-5xl sm:text-6xl font-semibold text-white leading-tight mb-4">
+        Backend Software<br>Engineer
+      </h1>
+      <p class="font-mono text-sm text-muted mb-8">
+        data_management · cloud_infrastructure · python · sql
+      </p>
+      <p class="text-gray-400 max-w-xl leading-relaxed mb-10">
+        I build backend systems that hold up under real usage — the kind of work that
+        goes unnoticed when it's done right. Currently looking for a role where I can
+        keep building that foundation on a real team.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="px-5 py-3 bg-accent text-black text-sm font-semibold rounded-lg hover:bg-white transition-colors">
+          View Projects
+        </a>
+        <a href="#resume" class="px-5 py-3 border border-line text-sm font-semibold rounded-lg text-gray-200 hover:border-accent hover:text-accent transition-colors">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="border-b border-line">
+    <div class="max-w-3xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs text-accent tracking-widest uppercase mb-6"># about</p>
+      <div class="space-y-5 text-gray-300 leading-relaxed max-w-2xl">
+        <p>
+          I'm a backend software engineer who likes solving the unglamorous problems
+          underneath an application — how data is structured, how it moves, and how
+          the whole thing stays reliable once real usage hits it.
+        </p>
+        <p>
+          That focus shows up clearest in my POS system project, where I designed the
+          database schema, built the backend in Python, and worked through the kind of
+          tradeoffs that come with any system meant to handle real transactions —
+          data integrity, structure that scales, and how the pieces connect end to end.
+          I've also worked with AWS to understand how backend systems actually get
+          deployed and run in production, not just built locally.
+        </p>
+        <p class="text-gray-400">
+          Computer Science graduate, University of Texas at San Antonio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects — styled as schema rows -->
+  <section id="projects" class="border-b border-line">
+    <div class="max-w-3xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs text-accent tracking-widest uppercase mb-2"># projects</p>
+      <p class="text-gray-500 text-sm mb-10">Two records, one flagship.</p>
+
+      <!-- table header -->
+      <div class="hidden sm:grid grid-cols-12 gap-4 font-mono text-xs text-muted uppercase tracking-wider border-b border-line pb-3 mb-2 px-5">
+        <div class="col-span-4">name</div>
+        <div class="col-span-3">stack</div>
+        <div class="col-span-3">status</div>
+        <div class="col-span-2 text-right">link</div>
+      </div>
+
+      <!-- POS System — flagship -->
+      <div class="schema-row border border-line rounded-lg px-5 py-5 mb-3">
+        <div class="grid sm:grid-cols-12 gap-2 sm:gap-4 items-center">
+          <div class="sm:col-span-4">
+            <p class="font-display text-lg text-white">POS System</p>
+            <p class="text-sm text-gray-500 mt-1 sm:hidden">Flagship project</p>
+          </div>
+          <div class="sm:col-span-3 font-mono text-xs text-gray-400">
+            python · sql · aws
+          </div>
+          <div class="sm:col-span-3">
+            <span class="font-mono text-xs px-2 py-1 rounded bg-accent/10 text-accent border border-accent/30">
+              in_progress
+            </span>
+          </div>
+          <div class="sm:col-span-2 sm:text-right">
+            <a href="#" class="font-mono text-xs text-gray-400 hover:text-accent transition-colors">
+              github →
+            </a>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400 mt-4 leading-relaxed max-w-xl">
+          A point-of-sale system with a schema designed for real transaction integrity —
+          covering inventory, orders, and reporting end to end.
+        </p>
+      </div>
+
+      <!-- CRUD app -->
+      <div class="schema-row border border-line rounded-lg px-5 py-5">
+        <div class="grid sm:grid-cols-12 gap-2 sm:gap-4 items-center">
+          <div class="sm:col-span-4">
+            <p class="font-display text-lg text-white">CRUD App</p>
+            <p class="text-sm text-gray-500 mt-1 sm:hidden">Fundamentals</p>
+          </div>
+          <div class="sm:col-span-3 font-mono text-xs text-gray-400">
+            python · sql
+          </div>
+          <div class="sm:col-span-3">
+            <span class="font-mono text-xs px-2 py-1 rounded bg-gray-800 text-gray-400 border border-gray-700">
+              planned
+            </span>
+          </div>
+          <div class="sm:col-span-2 sm:text-right">
+            <a href="#" class="font-mono text-xs text-gray-400 hover:text-accent transition-colors">
+              github →
+            </a>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400 mt-4 leading-relaxed max-w-xl">
+          A small, complete Create–Read–Update–Delete application demonstrating core
+          backend fundamentals from the ground up.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="border-b border-line">
+    <div class="max-w-3xl mx-auto px-6 py-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+      <div>
+        <p class="font-mono text-xs text-accent tracking-widest uppercase mb-2"># resume</p>
+        <p class="text-gray-400 text-sm">One page, up to date.</p>
+      </div>
+      <!-- Update this href to point to your actual resume PDF -->
+      <a href="resources/THE-Joshua-Catzoela-Resume.pdf" download
+         class="px-5 py-3 border border-line rounded-lg text-sm font-semibold text-gray-200 hover:border-accent hover:text-accent transition-colors whitespace-nowrap">
+        Download PDF ↓
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="max-w-3xl mx-auto px-6 py-20">
+      <p class="font-mono text-xs text-accent tracking-widest uppercase mb-6"># contact</p>
+      <p class="text-gray-300 mb-8 max-w-xl leading-relaxed">
+        Always open to connecting with others in backend, data, or cloud-focused engineering.
+      </p>
+      <div class="flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm">
+        <a href="https://www.linkedin.com/in/joshua-catzoela-55742a233/" target="_blank"
+           class="text-gray-400 hover:text-accent transition-colors">
+          linkedin ↗
+        </a>
+        <!-- Update these to your actual links -->
+        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+          github ↗
+        </a>
+        <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-accent transition-colors">
+          email ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-line">
+    <div class="max-w-3xl mx-auto px-6 py-8">
+      <p class="font-mono text-xs text-gray-600">© 2026 Joshua Catzoela</p>
+    </div>
+  </footer>
+
+</body>
+</html>
